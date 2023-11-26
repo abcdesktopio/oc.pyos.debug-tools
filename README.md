@@ -38,10 +38,10 @@ docker build -t abcdesktopio/pyos-debug-tools:main .
 # To run 
 
 ```
-kubectl apply -f pyos-debug-tools.yaml 
+kubectl apply -f https://raw.githubusercontent.com/abcdesktopio/oc.pyos.debug-tools/main/pyos-debug-tools.yaml
 ```
 
-# to logs 
+# To logs 
 
 ```
 kubectl logs pyos-debug-tools -n abcdesktop
