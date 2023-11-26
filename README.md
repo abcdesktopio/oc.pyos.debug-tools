@@ -46,3 +46,36 @@ kubectl apply -f pyos-debug-tools.yaml
 ```
 kubectl logs pyos-debug-tools -n abcdesktop
 ```
+
+You should read on stdout
+
+```
+Initializing ...
+KUBERNETES_SERVICE_HOST=10.96.0.1
+KUBERNETES_SERVICE_PORT=443
+KUBERNETES_SERVICE_PORT_HTTPS=443
+load_incluster_config done
+use namespace=abcdesktop
+listing pods in abcdesktop:
+{'api_version': 'v1',
+ 'items': [{'api_version': None,
+            'kind': None,
+            'metadata': {'annotations': None,
+                         'creation_timestamp': datetime.datetime(2023, 10, 24, 14, 25, 7, tzinfo=tzlocal()),
+                         'deletion_grace_period_seconds': None,
+                         'deletion_timestamp': None,
+                         'finalizers': None,
+                         'generate_name': 'daemonset-nginx-',
+                         'generation': None,
+                         'labels': {'controller-revision-hash': '56984c456d',
+                                    'name': 'daemonset-nginxpods',
+                                    'netpol/dns': 'true',
+                                    'netpol/memcached': 'true',
+                                    'netpol/ocuser': 'true',
+                                    'netpol/pyos': 'true',
+                                    'netpol/speedtest': 'true',
+                                    'pod-template-generation': '4',
+                                    'run': 'nginx-od',
+                                    'type': 'frontend'
+...
+```
