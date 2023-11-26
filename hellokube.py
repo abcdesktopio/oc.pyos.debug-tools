@@ -25,7 +25,7 @@ def main():
                 print( f"load_incluster_config failed {e_in}" )
                 print( f"load_kube_config failed {e_out}" )
         v1 = client.CoreV1Api()
-        namespace = os.environ.get('NAMESPACE', 'abcdesktop')
+        namespace = os.environ.get('POD_NAMESPACE', 'abcdesktop')
         print( f"use namespace={namespace}" ) 
         print( f"listing pods in {namespace}:")
         while(True):
