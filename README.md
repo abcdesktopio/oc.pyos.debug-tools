@@ -76,6 +76,7 @@ listing pods in abcdesktop:
                                     'netpol/speedtest': 'true',
                                     'pod-template-generation': '4',
                                     'run': 'nginx-od',
-                                    'type': 'frontend'
-...
+                                    'type': 'frontend,
+                                    ...
+[CUT HERE] 
 ```
