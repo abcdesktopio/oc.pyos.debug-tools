@@ -1,6 +1,7 @@
 # oc.pyos.debug-tools
-simple debug tools for kubernetes troubleshooting with pyos
-Contains a simple python script to check config and list pods in `$POD_NAMESPSACE`
+simple debug tools for kubernetes troubleshooting with pyos.
+
+It contains a simple python script to check config and list pods in `$POD_NAMESPSACE`
 
 Load the `load_incluster_config()` or `load_kube_config()`
 ```
