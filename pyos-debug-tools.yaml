@@ -19,6 +19,7 @@ spec:
     serviceAccountName: pyos-serviceaccount
     containers:
     - name : pyos-debug-tools
+      imagePullPolicy: Always
       image: abcdesktopio/pyos-debug-tools:main
       env:
       - name: NODE_NAME
