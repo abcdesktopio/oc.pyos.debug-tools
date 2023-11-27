@@ -2,6 +2,7 @@ from kubernetes import client, config
 from kubernetes.client.rest import ApiException
 from pprint import pprint
 import os
+import time
 
 def main():
         # the config will be loaded from default location.
@@ -35,6 +36,6 @@ def main():
           except ApiException as e:
             print("Exception when calling CoreV1Api->list_namespaced_pod: %s\n" % e)
           print( f"sleeping for {time_to_sleep_in_second}" )
-          sleep(time_to_sleep_in_second)
+          time.sleep(time_to_sleep_in_second)
 if __name__ == '__main__':
     main()
